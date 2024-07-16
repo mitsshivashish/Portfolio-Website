@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"/>
+      <script src="https://kit.fontawesome.com/cdead2a0ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+        <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
+    <section class="banner" id="home">
+      <div class="textbx">
+        <h2>Hello , I'm<br /><span>Shivashish Tiwari. </span></h2>
+        <h3>I'm a Front End Web Developer.</h3>
+        <a href="#about" class="btn">About Me</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx w50">
+          <h3>I'm a Front End Web Developer.</h3>
+          <p>
+            As a passionate and detail-oriented front-end web developer, I
+            specialize in creating visually stunning and user-friendly websites.
+            With a strong foundation in HTML, CSS, and JavaScript, I translate
+            design concepts into responsive and interactive web experiences. My
+            expertise includes crafting layouts that adapt seamlessly to any
+            device, ensuring an optimal user experience on desktops, tablets,
+            and smartphones. <br /><br />By implementing best practices in user
+            interface and user experience design, I create intuitive and
+            engaging interfaces. I ensure consistent performance and appearance
+            across all major web browsers and use Git for version control,
+            enabling smooth collaboration and efficient project management.With
+            a keen eye for design and a commitment to delivering high-quality
+            code, I strive to bring creative ideas to life and enhance the
+            digital presence of each project I work on.
+          </p>
+        </div>
+        <div class="w50">
+          <img src="images/img1.jpg" class="img" />
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="heading white">
+        <h2>Our Services</h2>
+        <p>We offer comprehensive website design and development services.</p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="images/icon1.png" alt="" />
+          <h2>Web Design</h2>
+          <p>
+            We specialize in creating stunning, user-friendly websites that help
+            businesses and individuals establish a strong online presence.
+          </p>
+        </div>
+        <div class="servicesBx">
+          <img src="images/icon5.png" alt="" />
+          <h2>Content Writing</h2>
+          <p>
+            Managing your website content has never been easier. We integrate
+            powerful CMS platforms like WordPress, Joomla, and Drupal, enabling
+            you to update and manage your website
+          </p>
+        </div>
+        <div class="servicesBx">
+          <img src="images/icon2.png" alt="" />
+          <h2>Web Developement</h2>
+          <p>
+            Our team of experienced designers and developers work closely with
+            clients to craft custom websites tailored to their unique needs and
+            goals.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="work" id="work">
+      <div class="heading">
+        <h2>Our Latest Work</h2>
+      </div>
+      <div class="content">
+        <div class="workBx">
+          <img src="images/product1.jpg" alt="" />
+        </div>
+        <div class="workBx">
+          <img src="images/product2.jpg" alt="" />
+        </div>
+        <div class="workBx">
+          <img src="images/product3.jpg" alt="" />
+        </div>
+        <div class="workBx">
+          <img src="images/product4.jpg" alt="" />
+        </div>
+      </div>
+      <div class="heading">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="heading white">
+        <h2>Contact Us</h2>
+        <p>Feel Free to reach me</p>
+        </div>
+        <div class="content">
+          <div class="contactInfo">
+            <h3>Contact Info</h3>
+            <div class="contactInfoBx">
+              <div class="box">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>
+                    B9 Purushottam Vihar,<br />Gola Ka Mandir,<br />Gwalior
+                    (M.P),<br />India <br />474001
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Phone</h3>
+                  <p>+918602840472</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="text">
+                  <h3>Email</h3>
+                  <p>Shivashishtiwari18@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formbx">
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <h3>Message Me</h3>
+              <input type="text" id="name" placeholder="Full Name" required>
+              <input type="email" id="email" placeholder="Email" required>
+              <input type="tel" id="phone" placeholder="Contact Number" required>
+              <textarea placeholder="Your Message" id="message"></textarea>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+        </div>
+    </section>
+    <div class="copyright">
+      <p>&copy; 2023 Shivashish Tiwari. All rights reserved.</p>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active')
+        menu.classList.toggle('active')
+      }
+    </script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+          Host : "smtp.gmail.com",
+          Username : "shivashishtiwari18@gmail.com",
+          Password : "Shivashish@123",
+          To : 'shivashishtiwari673@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "New Contact Form Enquiry",
+          Body : "Name: " + document.getElementById("name").value
+                  + "<br> Email: " + document.getElementById("email").value
+                  + "<br> phone: " + document.getElementById("phone").value
+                  + "<br> Message: " + document.getElementById("message").value
+      }).then(
+        message => {
+          console.log("Email sent successfully");
+          alert("Message Sent Successfully");
+        }
+      ).catch(
+        error => {
+          console.error("Error sending email:", error);
+          alert("Failed to send message. Please try again later.");
+        }
+      );
+    }
+  </script>
+  </body>
+</html>
