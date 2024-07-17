@@ -8,9 +8,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
       integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
-      crossorigin="anonymous"/>
-      <script src="https://kit.fontawesome.com/cdead2a0ca.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"/>
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/cdead2a0ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -120,97 +131,117 @@
       <div class="heading white">
         <h2>Contact Us</h2>
         <p>Feel Free to reach me</p>
-        </div>
-        <div class="content">
-          <div class="contactInfo">
-            <h3>Contact Info</h3>
-            <div class="contactInfoBx">
-              <div class="box">
-                <div class="icon">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div class="text">
-                  <h3>Address</h3>
-                  <p>
-                    B9 Purushottam Vihar,<br />Gola Ka Mandir,<br />Gwalior
-                    (M.P),<br />India <br />474001
-                  </p>
-                </div>
+      </div>
+      <div class="content">
+        <div class="contactInfo">
+          <h3>Contact Info</h3>
+          <div class="contactInfoBx">
+            <div class="box">
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>
               </div>
-              <div class="box">
-                <div class="icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="text">
-                  <h3>Phone</h3>
-                  <p>+918602840472</p>
-                </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>
+                  B9 Purushottam Vihar,<br />Gola Ka Mandir,<br />Gwalior
+                  (M.P),<br />India <br />474001
+                </p>
               </div>
-              <div class="box">
-                <div class="icon">
-                  <i class="fa-regular fa-envelope"></i>
-                </div>
-                <div class="text">
-                  <h3>Email</h3>
-                  <p>Shivashishtiwari18@gmail.com</p>
-                </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>+918602840472</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>Shivashishtiwari18@gmail.com</p>
               </div>
             </div>
           </div>
-          <div class="formbx">
-            <form onsubmit="sendEmail(); reset(); return false;">
-              <h3>Message Me</h3>
-              <input type="text" id="name" placeholder="Full Name" required>
-              <input type="email" id="email" placeholder="Email" required>
-              <input type="tel" id="phone" placeholder="Contact Number" required>
-              <textarea placeholder="Your Message" id="message"></textarea>
-              <input type="submit" value="Send">
-            </form>
-          </div>
         </div>
+        <div class="formbx">
+          <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Message Me</h3>
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Contact Number"
+              required
+            />
+            <textarea placeholder="Your Message" id="message"></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
     </section>
+    <footer>
+      <div class="footerContainer">
+          <div class="socialIcons">
+              <a href="https://www.linkedin.com/in/shivashish-tiwari-777124244/"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/sanatani.shivashish.tiwari?igsh=bnVtM2dlMnkxaDJl"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://x.com/ShivashishTiw14"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://discord.com/channels/@cclucky."><i class="fa-brands fa-discord"></i></a>
+              <a href="https://github.com/mitsshivashish"><i class="fa-brands fa-github"></i></a>
+          </div>
+      </div>
     <div class="copyright">
       <p>&copy; 2023 Shivashish Tiwari. All rights reserved.</p>
     </div>
+    </footer>
+
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
 
-      function toggleMenu(){
-        var menuToggle = document.querySelector('.toggle');
-        var menu = document.querySelector('.menu');
-        menuToggle.classList.toggle('active')
-        menu.classList.toggle('active')
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var menu = document.querySelector(".menu");
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
       }
     </script>
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script>
-      function sendEmail(){
+      function sendEmail() {
         Email.send({
-          Host : "smtp.gmail.com",
-          Username : "shivashishtiwari18@gmail.com",
-          Password : "Shivashish@123",
-          To : 'shivashishtiwari673@gmail.com',
-          From : document.getElementById("email").value,
-          Subject : "New Contact Form Enquiry",
-          Body : "Name: " + document.getElementById("name").value
-                  + "<br> Email: " + document.getElementById("email").value
-                  + "<br> phone: " + document.getElementById("phone").value
-                  + "<br> Message: " + document.getElementById("message").value
-      }).then(
-        message => {
-          console.log("Email sent successfully");
-          alert("Message Sent Successfully");
-        }
-      ).catch(
-        error => {
-          console.error("Error sending email:", error);
-          alert("Failed to send message. Please try again later.");
-        }
-      );
-    }
-  </script>
+          Host: "smtp.gmail.com",
+          Username: "shivashishtiwari18@gmail.com",
+          Password: "Shivashish@123",
+          To: "shivashishtiwari673@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New Contact Form Enquiry",
+          Body:
+            "Name: " +
+            document.getElementById("name").value +
+            "<br> Email: " +
+            document.getElementById("email").value +
+            "<br> phone: " +
+            document.getElementById("phone").value +
+            "<br> Message: " +
+            document.getElementById("message").value,
+        })
+          .then((message) => {
+            console.log("Email sent successfully");
+            alert("Message Sent Successfully");
+          })
+          .catch((error) => {
+            console.error("Error sending email:", error);
+            alert("Failed to send message. Please try again later.");
+          });
+      }
+    </script>
   </body>
 </html>
