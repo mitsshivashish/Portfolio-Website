@@ -169,17 +169,18 @@
           </div>
         </div>
         <div class="formbx">
-          <form onsubmit="sendEmail(); reset(); return false;">
+          <form action="https://api.web3forms.com/submit" method="POST">
             <h3>Message Me</h3>
-            <input type="text" id="name" placeholder="Full Name" required />
-            <input type="email" id="email" placeholder="Email" required />
+            <input type="hidden" name="access_key" value="b11bfdcb-2c42-4af2-a51a-e84b6d8fe16c">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email" required />
             <input
               type="tel"
-              id="phone"
+              name="phone"
               placeholder="Contact Number"
               required
             />
-            <textarea placeholder="Your Message" id="message"></textarea>
+            <textarea placeholder="Your Message" name="message"></textarea>
             <input type="submit" value="Send" />
           </form>
         </div>
@@ -213,25 +214,29 @@
         menu.classList.toggle("active");
       }
     </script>
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "shivashishtiwari18@gmail.com",
-          Password: "Shivashish@123",
-          To: "shivashishtiwari673@gmail.com",
-          From: document.getElementById("email").value,
-          Subject: "New Contact Form Enquiry",
-          Body:
-            "Name: " +
+  </body>
+</html>
+
+<!-- "Name: " +
             document.getElementById("name").value +
             "<br> Email: " +
             document.getElementById("email").value +
             "<br> phone: " +
             document.getElementById("phone").value +
             "<br> Message: " +
-            document.getElementById("message").value,
+            document.getElementById("message").value, -->
+
+            <!-- <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "shivashishtiwari18@gmail.com",
+          Password: "jwue njkk btwc giio",
+          To: "shivashisht1@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New Contact Form Enquiry",
+          Body: "this is body"
         })
           .then((message) => {
             console.log("Email sent successfully");
@@ -242,6 +247,4 @@
             alert("Failed to send message. Please try again later.");
           });
       }
-    </script>
-  </body>
-</html>
+    </script> -->
